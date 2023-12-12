@@ -6,10 +6,42 @@
     <title>home</title>
   </head>
   <body>
-    <h1>geeksforgeeks</h1>
 
     {% with word="worD is this"%}
-    
+<div>
+    <p>
+        The truncatechars filter is used to truncate a string if it is longer than the specified number of characters. Truncated strings will end with an ellipsis character (…).
+
+Here’s how you can use the truncatechars filter: {{ value | truncatechars:7 }}.
+    </p>
+    {{ word | truncatechars:"4"}}
+</div>
+    <div>
+        <p>
+            wordcount <br>
+            It is used to return the number of words. Example
+            {{ value | wordcount }}
+            If value is “jai is a slug”, the output will be 4.
+        </p>
+        {{ word | wordcount }}
+    </div>
+    <div>
+        <p>
+            upper <br>
+            It is used to convert a string into all uppercase. Example
+            {{ value | upper }}
+            If value is “Jai is a slug”, the output will be “JAI IS A SLUG”.
+        </p>
+        {{ word | lower }}
+    </div>
+    <div>
+        <p>
+            unordered_list <br>
+            It is used to recursively take a self-nested list and returns an HTML unordered list – WITHOUT opening and closing <ul> tags. Example
+            {{ wrod | unordered_list }}
+        </p>
+
+    </div>
     <div>
         <p>
             title <br>
